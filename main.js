@@ -152,3 +152,13 @@ button.addEventListener('click', () => {
         emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
     }).then(() => jsConfetti.addConfetti())
 })
+document.querySelector('#button').addEventListener("click", hrefFunction);
+
+function hrefFunction(){
+    timeout = setTimeout(alertFunc, 8000);
+}
+function alertFunc() {  
+    location.href = "images/birth.html";
+    clearTimeout(timeout);
+
+}
